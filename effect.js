@@ -170,6 +170,7 @@ $('document').ready(function(){
 			$('.message').fadeIn('slow');
 		});
 		
+		
 		var i;
 
 		function msgLoop (i) {
@@ -179,6 +180,7 @@ $('document').ready(function(){
 			if(i==50){
 				$("p:nth-child(49)").fadeOut('slow').promise().done(function () {
 					$('.cake').fadeIn('fast');
+					$('.after-story').fadeIn('slow');
 				});
 				
 			}
@@ -187,19 +189,14 @@ $('document').ready(function(){
 			}			
 
 		});
-			// body...
+
 		}
 		
 		msgLoop(0);
-		$('#story').fadeOut('slow').promise().done(function(){
-			$('#after').fadeIn('slow');
-		});
+
+		
+
 		
 	});
 	
 });
-
-
-
-
-//alert('hello');
